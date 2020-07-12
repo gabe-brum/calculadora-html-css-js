@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc_corpo">
+            <div class="display" id="display">
+                0
+            </div>
+            <div class="linha1">
+                <div onclick="pegarValor('7')" class="tecla">7</div>
+                <div onclick="pegarValor('8')" class="tecla">8</div>
+                <div onclick="pegarValor('9')" class="tecla">9</div>
+                <div onclick="pegarOperador('/')" class="tecla">/</div>
+                <div onclick="limpar('C')" class="tecla">C</div>
+            </div>
+            <div class="linha2">
+                <div onclick="pegarValor('4')" class="tecla">4</div>
+                <div onclick="pegarValor('5')" class="tecla">5</div>
+                <div onclick="pegarValor('6')" class="tecla">6</div>
+                <div onclick="pegarOperador('X')" class="tecla">X</div>
+                <div onclick="pegarOperador('%')" class="tecla">%</div>
+            </div>
+            <div class="linha3">
+                <div onclick="pegarValor('1')" class="tecla">1</div>
+                <div onclick="pegarValor('2')" class="tecla">2</div>
+                <div onclick="pegarValor('3')" class="tecla">3</div>
+                <div onclick="pegarOperador('-')" class="tecla">-</div>
+                <div onclick="verificarIgual()" class="tecla igual">=</div>
+            </div>
+            <div class="linha4">
+                <div onclick="pegarValor('0')" class="tecla zero">0</div>
+                <div onclick="pegarValor('.')" class="tecla">,</div>
+                <div onclick="pegarOperador('+')" class="tecla">+</div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <audio src="sounds/blip.ogg" id="blip"></audio>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://jquery-textfill.github.io/js/textfill/jquery.textfill.js"></script>
+</body>
+
+</html>
